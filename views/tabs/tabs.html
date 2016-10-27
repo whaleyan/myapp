@@ -1,0 +1,35 @@
+<ion-tabs class="tabs-light  positives">
+	<ion-tab title="Home" icon-on="icon ion-ios-paper positive" icon-off="icon ion-ios-paper-outline" ui-sref="tabs.home">
+		<ion-nav-view name="tabs-home"></ion-nav-view>
+	</ion-tab>
+	<ion-tab title="topic" icon-on="icon ion-android-compass positive " icon-off="icon ion-android-compass " ui-sref="tabs.topic">
+		<ion-nav-view name="tabs-topic">
+			<ion-header-bar class="topic_header tabs-background-positive tabs-top">
+				<div class="detail_title ">
+					<div class="tabs tabs-striped  ">
+						<a class="tab-item " href="#/tabs/shoucang">
+							收藏
+						</a>
+						<a class="tab-item " href="#/tabs/remen">
+							热门
+						</a>
+						<a class="tab-item " href="#/tabs/tuijian">
+							设置
+						</a>
+					</div>
+				</div>
+			</ion-header-bar>
+		</ion-nav-view>
+	</ion-tab>
+	<ion-tab title="notice" icon-on="icon ion-ios-bell  positive" icon-off="icon ion-ios-bell " ui-sref="tabs.notice">
+		<ion-nav-view name="tabs-notice"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab title="message" icon-on="icon ion-ios-chatbubble positive" icon-off="icon ion-ios-chatbubble " ui-sref="tabs.message">
+		<ion-nav-view name="tabs-message"></ion-nav-view>
+	</ion-tab>
+
+	<ion-tab title="user" icon-on="icon ion-navicon positive" icon-off="icon ion-navicon" ui-sref="tabs.user">
+		<ion-nav-view name="tabs-user"></ion-nav-view>
+	</ion-tab>
+</ion-tabs>
