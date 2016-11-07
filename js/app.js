@@ -10,7 +10,6 @@ myApp.config(function($stateProvider,$urlRouterProvider){
             abstract:true,
             templateUrl:"views/tabs/tabs.html"
         })
-
         .state("tabs.home",{
             url:"/home",
             views:{"tabs-home":{
@@ -25,14 +24,29 @@ myApp.config(function($stateProvider,$urlRouterProvider){
         })
         .state("tabs.notice",{
             url:"/notice",
-            views:{"tabs-notice":{
-                templateUrl:"views/notice/notice.html"
+            views:{
+                "tabs-notice":{
+                    templateUrl:"views/notice/notice.html"
             }}
         })
         .state("tabs.message",{
             url:"/message",
             views:{"tabs-message":{
                 templateUrl:"views/message/message.html"
+
+            }}
+        })
+        .state("tabs.attention",{
+            url:"/attention",
+            views:{"tabs-notice":{
+                templateUrl:"views/notice/attention.html"
+
+            }}
+        })
+        .state("tabs.support",{
+            url:"/support",
+            views:{"tabs-notice":{
+                templateUrl:"views/notice/support.html"
 
             }}
         })
@@ -44,8 +58,7 @@ myApp.config(function($stateProvider,$urlRouterProvider){
         })
         .state("tabs.shoucang", {
             url: "/shoucang",
-            views: {
-                "tabs-topic": {
+            views: { "tabs-topic": {
                     templateUrl: "views/topic/shoucang.html"
                 }
             }
@@ -59,14 +72,17 @@ myApp.config(function($stateProvider,$urlRouterProvider){
             }
         })
         .state("tabs.tuijian", {
-            url: "/tuijian",
-            views: {
+            url: "/topic",
+             views: {
                 "tabs-topic": {
-                    templateUrl: "views/topic/tuijian.html"
+                    templateUrl: "views/topic/topic.html"
                 }
             }
-        })
-    ;
+        }) ;
 
     $urlRouterProvider.otherwise("/tabs/home")
+})
+.controller("sliderController",function($scope){
+     $scope.myActiveSlide=1;
+
 })

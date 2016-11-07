@@ -1,19 +1,19 @@
-<!--<ion-view title="Topic">-->
-	<!--<ion-header-bar class="topic_header tabs-positive tabs-striped  ">-->
-		<!--<div class="tabs">-->
-			<!--<a title="推荐" >-->
-				<!--推荐-->
-			<!--</a>-->
-			<!--<a title="热门" >-->
-				<!--热门-->
-			<!--</a>-->
-			<!--<a title="收藏" >-->
-				<!--收藏-->
-			<!--</a>-->
-		<!--</div>-->
-	<!--</ion-header-bar>-->
+<ion-view title="Topic" ng-controller="sliderController" >
+    <ion-header-bar active-slide="myActiveSlide" class="topic_header tabs-positive tabs-striped  tabs-top">
 
-	<!--<ion-content>-->
-		<!--Topic-->
-	<!--</ion-content>-->
-<!--</ion-view>-->
+            <ion-tabs class=" ">
+                <ion-tab title="推荐" ui-sref="tabs.tuijian">
+                    <ion-view name="tabs-tuijian"></ion-view>
+                </ion-tab>
+                <ion-tab title="热门"  ui-sref="tabs.remen">
+                    <ion-view name="tabs-remen"></ion-view>
+                </ion-tab>
+                <ion-tab title="收藏"  ui-sref="tabs.shoucang">
+                    <ion-view name="tabs-shoucang"></ion-view>
+                </ion-tab>
+            </ion-tabs>
+    </ion-header-bar>
+	<ion-content >
+		Topic
+	</ion-content>
+</ion-view>
